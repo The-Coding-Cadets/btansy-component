@@ -35,4 +35,8 @@ app.get('/images', (req, res) => {
   res.sendFile(path.resolve('client/dist/bundle.js'));
 });
 
+app.get('/white', (req, res) => {
+  res.sendFile(path.resolve('public/white.png'));
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
